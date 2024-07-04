@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        flex: 1;
+        margin-right: 20px;
+        text-align: right;
+    }
+    .form-group input, .form-group select {
+        flex: 2;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"], input[type="reset"] {
+        width: auto;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    input[type="reset"] {
+        background: #f44336;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        opacity: 0.9;
+    }
+    hr {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+<form>
+    <center>
+        <h1> Registration Form for Internship 🧑🏻‍🎓 </h1>
+        <hr>
+    </center>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <label for="year">Year</label>
+        <select id="year">
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="college">College</label>
+        <input type="text" id="college" placeholder="Enter your college name">
+    </div>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department">
+            <option>ECE</option>
+            <option>AIDS</option>
+            <option>EEE</option>
+            <option>CSE</option>
+            <option>IT</option>
+            <option>BME</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="domain">Domain</label>
+        <select id="domain">
+            <option>Machine Learning</option>
+            <option>Circuit designing</option>
+            <option>Chip designing</option>
+            <option>UI/UX design</option>
+            <option>Web development</option>
+            <option>App development</option>
+            <option>Cyber security</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="cgpa">CGPA</label>
+        <input type="number" id="cgpa" placeholder="7.8,8.2">
+    </div>
+    <div class="form-group">
+        <label for="mail">Mail ID</label>
+        <input type="text" id="mail">
+    </div>
+    <div class="form-group">
+        <label for="resume">Resume</label>
+        <input type="file" id="resume" accept="application/pdf">
+    </div>
+    <center>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </center>
+</form>
+</body>
+</html>
